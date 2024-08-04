@@ -35,7 +35,7 @@ app.use(session({
     })
 })
 )
-
+app.use(express.static('public'));
 //template engine
 app.use(expressLayout)
 app.set('layout','./layout/main')
