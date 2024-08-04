@@ -95,7 +95,10 @@ router.post('/search', async (req, res) => {
 
 
 router.get("/about", (req, res) => {
-    res.render("about");
+    res.render("about",{
+      currentRoute: "/about"
+    });
+
 });
 
 
